@@ -44,7 +44,7 @@
             height: max-content;
             width: 80%;
             border-radius: 1rem;
-            top: 6rem;
+            top: -500rem;
             left: 50%;
             padding: 1rem;
             transform: translate(-50%);
@@ -63,7 +63,7 @@
                 .navItem {
                     padding: .5rem 0;
 
-                    .navLink {
+                    .navItem {
                         color: var(--textColor);
                         font-size: .9rem;
                         font-weight: 600;
@@ -98,8 +98,10 @@
 
         }
 
+        .activeNavbar {
+            top: 7rem;
+        }
     }
-
 
     .toggleNavbar {
         .icon {
