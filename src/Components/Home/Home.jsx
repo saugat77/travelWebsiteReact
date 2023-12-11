@@ -28,8 +28,7 @@ const Home = () => {
                     <div className="destinationInput">
                         <label htmlFor="date">Select your date:</label>
                         <div className="input flex">
-                            <input type="date" name="" placeholder='Enter Destination Name....' />
-                            <GrLocation className='icon' />
+                            <input type="date" name="" />
                         </div>
                     </div>
                     <div className="priceInput">
