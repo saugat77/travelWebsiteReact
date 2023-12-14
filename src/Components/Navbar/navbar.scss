@@ -15,7 +15,7 @@
 
 .header {
     position: fixed;
-    display: fixed;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -33,7 +33,7 @@
         .icon {
             font-size: 25px;
             color: var(--PrimaryColor);
-            transform: translate(5px);
+            transform: translateY(5px);
         }
     }
 
@@ -46,10 +46,9 @@
             border-radius: 1rem;
             top: -500rem;
             left: 50%;
-            padding: 1rem;
             transform: translate(-50%);
             z-index: 2000;
-            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.994);
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
             transition: 0.3s ease-in-out;
 
             .navLists {
@@ -57,13 +56,12 @@
                 justify-content: center;
                 width: 100%;
                 margin: auto;
-                margin-top: 20px;
                 padding: .5rem 0;
 
                 .navItem {
                     padding: .5rem 0;
 
-                    .navItem {
+                    .navLink {
                         color: var(--textColor);
                         font-size: .9rem;
                         font-weight: 600;

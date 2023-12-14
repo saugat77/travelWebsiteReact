@@ -30,6 +30,7 @@
   mix-blend-mode: hard-light;
 }
 .home video {
+  margin-top: 4.5rem;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -40,8 +41,8 @@
 }
 .home .homeContent {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 8rem 1.5rem 3rem;
   display: flex;
   row-gap: 3rem;
@@ -52,47 +53,47 @@
   color: var(--whiteColor);
   z-index: 100;
 }
-.home .textDiv {
+.home .homeContent .textDiv {
   padding: 2rem 0;
 }
-.home .textDiv .smallText {
+.home .homeContent .textDiv .smallText {
   font-size: 13px;
   text-transform: uppercase;
 }
-.home .textDiv .homeTitle {
+.home .homeContent .textDiv .homeTitle {
   position: relative;
   font-size: 1.8rem;
 }
-.home .cardDiv {
+.home .homeContent .cardDiv {
   position: relative;
   padding: 2rem 1rem;
   background: var(--whiteColor);
   border-radius: 10px;
   gap: 1rem;
 }
-.home .cardDiv label {
+.home .homeContent .cardDiv label {
   display: block;
   color: var(--textColor);
   padding-bottom: 10px;
   font-size: 13px;
   font-weight: 500;
 }
-.home .cardDiv .label_total {
+.home .homeContent .cardDiv .label_total {
   justify-content: space-between;
   align-items: center;
 }
-.home .cardDiv .label_total .total {
+.home .homeContent .cardDiv .label_total .total {
   color: var(--textColor);
   font-size: 10px;
   padding-bottom: 10px;
 }
-.home .cardDiv .input {
+.home .homeContent .cardDiv .input {
   height: 40px;
   padding: 0.1rem;
   background: var(--inputColor);
   border-radius: 3rem;
 }
-.home .cardDiv .input input {
+.home .homeContent .cardDiv .input input {
   background: none;
   border: none;
   outline: none;
@@ -100,21 +101,21 @@
   font-size: 13px;
   font-weight: 500;
 }
-.home .cardDiv .input input::-moz-placeholder {
+.home .homeContent .cardDiv .input input::-moz-placeholder {
   font-size: 13px;
 }
-.home .cardDiv .input input::placeholder {
+.home .homeContent .cardDiv .input input::placeholder {
   font-size: 13px;
 }
-.home .cardDiv .input input .icon {
-  font-size: 18px;
-  color: var(--PrimaryColor) !important;
-  margin-left: 10px;
-}
-.home .cardDiv .input input .input[type=range] {
+.home .homeContent .cardDiv .input .input[type=range] {
   background: blue;
 }
-.home .cardDiv .searchOptions {
+.home .homeContent .cardDiv .input .icon {
+  font-size: 18px;
+  color: var(--blackColor) !important;
+  margin-left: 10px;
+}
+.home .homeContent .cardDiv .searchOptions {
   position: absolute;
   background: var(--gradientColor);
   width: -moz-max-content;
@@ -127,4 +128,26 @@
   left: 50%;
   transform: translate(-50%);
   justify-content: center;
+}
+.home .homeContent .cardDiv .searchOptions:hover {
+  background: var(--PrimaryColor);
+}
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .cardDiv .searchOptions span {
+  font-size: 13px;
+}
+.home .homeContent .homeFooterIcons {
+  width: 100%;
+  justify-content: space-between;
+}
+.home .homeContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-weight: 600;
+}
+.home .homeContent .homeFooterIcons .icon:hover {
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=home.css.map */

@@ -3,6 +3,11 @@ import './home.css';
 import video from '../../Assets/pexels_videos_2146396 (2160p).mp4';
 import { GrLocation } from 'react-icons/gr';
 import { HiFilter } from 'react-icons/hi';
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaListUl } from "react-icons/fa";
+import { TbAppsFilled } from "react-icons/tb";
 const Home = () => {
     return (
         <section className='home'>
@@ -43,6 +48,17 @@ const Home = () => {
                     <div className="searchOptions flex">
                         <HiFilter className="icon" />
                         <span>More Filters</span>
+                    </div>
+                </div>
+                <div className="homeFooterIcons flex">
+                    <div className="leftIcon">
+                        <FaFacebook className='icon' />
+                        <FaInstagram className='icon' />
+                        <AiOutlineWhatsApp className='icon' />
+                    </div>
+                    <div className="rightIcon">
+                        <FaListUl className='icon' />
+                        <TbAppsFilled className='icon' />
                     </div>
                 </div>
 
